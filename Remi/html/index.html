@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../css/stil.css">
+        <title>Remi</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="hdr">
+                    <ul>
+                        <img src="../slike/spades.png" alt="" id="logo">
+                        <li ><a href="#uvod" id="uvod" onclick="dugme('uvod', 'divUvod')">Uvod</a></li>
+                        <li id="dijeljenje" onclick="dugme('dijeljenje', 'divDijeljenje')"><a href="#dijeljenje">Dijeljenje</a></li>
+                        <li id="Igra" onclick="dugme('Igra', 'divIgra')"><a href="#Igra">Igra</a></li>
+                        <li id="nacinBodovanja" onclick="dugme('nacinBodovanja', 'divNacinBodovanja')"><a href="#nacinBodovanja">Način bodovanja</a></li>
+                        <li id="zapocniIgru" ><a href="igra.html">Započni igru</a></li>
+                    </ul>
+                    
+                </div>
+                <div class="container1">
+                    <h1>Remi - pravila igre</h1>
+                    <hr>
+                    <span>Remi se igra sa dva standardna špila od 52 karte i sa 4 Joker-a što ukupno čini 108 karata.
+                    Remi ukupno može igrati 6 igrača.</span>  
+                    <div id="divUvod" class="tekstovi"><h2 >Uvod</h2>
+                    <span>Nasumično se bira igrač koji će prvi dijeliti. Nakon što promiješa karte, špil prinosi igraču do njega (poslijednjem igraču u toj partiji) da ga 'presiječe'. Uzima se donja karta presječenog špila i okreće se licem na gore i stavlja pod presječeni špil na sredinu stola. Ta karta se može iskoristii za 'hand' (o tome dalje u tekstu). Ukoliko je ta karta džoker, igrač koji je presjekao špil ima pravo da zadrži tu kartu za sebe i okrene sledeću. Druga polovina presječenog špila ostaje kod djelioca iz koje se dijele karte.</span>
+                    </div>
+                    <div id="divDijeljenje" class="tekstovi">
+                    <h2>Dijeljenje</h2>
+                    <span>Dijeli se po jedna karta u krugu svakom igraču sve dok se svim igračima ne podijeli po 14 karata i igraču do djelioca (igrač koji prvi igra) se dijeli još jedna (petnaesta karta). Ostatak karata od dijeljenja ostaje na sredini stola iz koga se kasnije izvlače karte. Time se završava dijeljenje i igra počinje. Igru počinje igrač do djelioca, koji ima 15 karata.</span>
+                    </div>
+                    <div id="divIgra" class="tekstovi">
+                    <h2>Igra</h2>
+                    <span>Igrač koji igra prvi baca kartu koja mu je najmanje potrebna (nepotrebnu kartu). Ostali igrači redom, pošto naprave raspored karata, vuku po jednu kartu iz špila na sredini stola i bacaju po jednu koja im ne treba. Igra teče tim ritmom u krug i cilj je da neko od igrača spusti sve svoje karte složene bar u tercove na sto, okrenute licem na gore i ostavi jednu kartu kojom poklapa špil i time se partija završava.</span>
+                    <!--slika-->
+                    <!--treba dodat id za prvi h1-->
+                    <span>Šta je terc? Terc je skup karata od 3 karte složene u nekom redoslijedu. Terc može biti ili tri iste karte ili tri karte istog znaka složene u redosledu (npr. 7,8 i 9 ili 2,3 i 4...).
+                    Svaki igrač može da spusti svoje karte (u tercovima) i prije pobjede ukoliko u zbiru svih tercova ima najmanje 51 (štihovi i kečevi se računaju po 10 a ostale karte u njihovoj vrijednosti). Džoker može da zamijeni bilo koju kartu i računa se u vrijednosti karte koju je zamijenio. Kada igrač spusti svoje tercove i ostane sa jednom kartom u ruci on mora da čeka da izvuče kartu koju bi dodao nekom tercu ili većoj skupini karata bilo sebi ili nekom drugom igraču koji je takođe spustio dio svojih karata i na taj način završi igru.
+                    Šta je hand? Hand zanči da igrač odjednom spusti sve tercove (bar tercove) iz ruke i posljednjom kartom poklopi špil i završi igru.</span>
+                    <!--slika-->
+                    </div>
+                    <div id="divNacinBodovanja" class="tekstovi">
+                    <h2>Način bodovanja</h2>
+                    <span>Cilj je imati što manje bodova. Kada igrač završi (pobijedi) ostalim igračima se računa koliko im je karata ostalo u rukama u tom trenutku gdje štihovi i kečevi vrijede 10 a ostale karte imaju svoju vrijednost. Ukoliko neko od igrača u rukama ima džokera u trenutku kada jedan od igrača završi partiju, on se računa 20. Ako pobjednik te partije završi sa handom svim igračima se vrijednost karata u rukama množi sa 2.</span>
+                    </div>
+                </div>
+                <div>
+                    <a href="igra.html"><input type="submit" value="Započni igru" id="pocni" /></a>  
+                </div>
+                
+            </div>
+
+        </div>
+        <br>
+                <div style="text-align:center;width:100%;">
+                    <span>&copy 2017, All rights reserved to Cimeri </span>
+                </disv>
+                <br>
+    </body>
+    <script type="text/javascript" src="../JavaScript/Pocetna.js"></script>
+</html>

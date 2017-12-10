@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../css/stil.css">
+        <title>Remi</title>
+    </head>
+    <body>
+        <div class="cont">
+            <div class="cont1" style="margin-bottom:0px;">
+                <h1>Remi</h1>
+                <hr>
+                <span>Maksimalan broj igrača je 6 !</span></br>
+                <input type="name" placeholder="Broj igrača" id="brojIgraca" onblur="validateInput()">
+                <input type="submit" value="Potvrdi" id="start" onclick="buttonValidate('brojIgraca')">
+            </div><!--end of cont1-->
+            <div class="cont2">
+                <h1>Imena igrača:</h1>
+                <hr>
+                <input type="hidden" class="igrac" placeholder="Prvi igrač">
+                <input type="hidden" class="igrac" placeholder="Drugi igrač">
+                <input type="hidden" class="igrac" placeholder="Treći igrač">
+                <input type="hidden" class="igrac" placeholder="Četvrti igrač">
+                <input type="hidden" class="igrac" placeholder="Peti igrač">
+                <input type="hidden" class="igrac" placeholder="Šesti igrač">
+                <input type="hidden" value="Potvrdi" id="pocetak" onclick="buttonValidatePlayers()">
+            </div>
+        </div><!--end of cont-->
+           <div style="margin-top:0px;text-align:center;width:100%;">
+                    <span>&copy 2017, All rights reserved to Cimeri </span>
+                </div>
+        <br> 
+    </body>
+
+    <script type="text/javascript" src = "../JavaScript/Validacija.js"></script>
+</html>

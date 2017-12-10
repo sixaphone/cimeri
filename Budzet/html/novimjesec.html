@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Novi Mjesec</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/stil.css">
+</head>
+<body>
+	<div id="Cont_Novi">
+		<label id="Iduci">
+			Budžet za idući mjesec
+		</label>
+	</br>
+</br>
+	<label id="Unesi">
+		Unesi
+	</label>
+</br>
+<form action="../php/DodajMjesec.php" method="post">
+		<input type="text" name="iznos" id="broj">
+		
+		</br>
+		<label id="Cimi">
+			Unesi broj Cimera
+		</label>
+	</br>
+		<input type="text" name="cimeri" id="Cimic" onblur="AddCimere()">
+		<!--<input type="submit" name="unos" id="unoscimera" value="Unos">-->
+	</br>
+
+	
+
+
+
+	</div>
+	<div id="Cont_Imenac">
+		<label id="Cims">
+			Unesite imena Cimera
+		</label>
+		<input type="hidden" name="ime1" class="imenacimera">
+		<input type="hidden" name="ime2" class="imenacimera">
+		<input type="hidden" name="ime3" class="imenacimera">
+		<input type="hidden" name="ime4" class="imenacimera">
+		<input type="hidden" name="ime5" class="imenacimera">
+		<input type="hidden" name="ime6" class="imenacimera">
+		<input type="hidden" name="ime7" class="imenacimera">
+		<input type="hidden" name="ime8" class="imenacimera">
+		</br>
+
+
+	<input type="hidden" name="sacuvaj" id="sacuvaj" value="Spremi">
+</form>
+		
+	</div>
+
+	<img src="../Slike/lily.jpg" id="slika">
+
+</body>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+
+<script>
+	function AddCimere(){
+		var numOfCimer = 0;
+ 		$(".imenacimera").each(function(){
+			if(numOfCimer >= $('#Cimic').val())return;
+			$(this).attr('type','text');
+			numOfCimer++;
+		});
+		$('#sacuvaj').attr('type','submit');
+	}
+</script>
+
+</html>
